@@ -6,8 +6,10 @@
     npm install
     
  `npm run start` to start the application
+ 
+ `visit localhost://3000` in your browser 
 
-## To run code 
+
 
 
 
