@@ -1,0 +1,120 @@
+<div
+  class="conntainer border rounded-10 bg-dark-light h-full d-flex justify-content-center align-items-center"
+>
+
+  <div class="card signup-card w-500 w-three-quarter-sm ">
+    <div
+      class="alert-bar alert-error w-450 d-none align-items-center"
+      role="alert"
+    >
+      <span class="material-symbols-outlined mr-5">warning</span>
+      <span class="error-alert"></span>
+    </div>
+    <div class="card-title text-center mt-50">SignUp</div>
+
+    <form
+      class="w-full-md w-full p-20 container-fluid"
+      id="signup-form"
+    >
+      <div class="form-group">
+        <label for="first-name" class="required font-weight-semi-bold">First
+          name</label>
+        <input
+          type="text"
+          class="form-control shadow h-50"
+          id="first-name"
+          placeholder="First name"
+          required="required"
+        />
+        <label for="second-name" class="required font-weight-semi-bold">Other
+          names</label>
+        <input
+          type="text"
+          class="form-control shadow h-50"
+          id="other-names"
+          placeholder="Other names"
+          required="required"
+        />
+        <label for="Email" class="required font-weight-semi-bold">Email</label>
+        <input
+          type="text"
+          class="form-control shadow h-50"
+          id="Email"
+          placeholder="mymail@gmail.com"
+          required="required"
+        />
+        <p
+          class="m-0 text-success d-none font-size-12 mb-5 font-weight-semi-bold"
+          id="email-error-message"
+        >Hmmm 🤔 you already have an account</p>
+        <label for="contact" class="required font-weight-semi-bold">Mobile
+          contact</label>
+        <input
+          type="tel"
+          class="form-control shadow h-50"
+          id="mobile-contact"
+          placeholder=""
+          required="required"
+        />
+        <p class="text-danger m-0 d-none" id="contact-error-message">Mobile
+          Contact is Invalid</p>
+        <label
+          for="Password"
+          class="required font-weight-semi-bold"
+        >Password</label>
+        <input
+          type="password"
+          class="form-control shadow h-50"
+          id="password"
+          placeholder="Password"
+          required="required"
+        />
+        <p
+          class="text-danger m-0 d-none font-size-12"
+          id="password-message"
+        >Must contain at least five characters</p>
+        <label
+          for="confirm-password"
+          class="required font-weight-semi-bold"
+        >Confirm Password</label>
+        <input
+          type="password"
+          class="form-control shadow h-50"
+          id="confirm-password"
+          placeholder="Re-Enter password"
+          required="required"
+        />
+        <p
+          class="text-danger m-0 d-none font-size-12"
+          id="password-error-message"
+        >Hmmm 🤔 both Passwords don't look equal to us</p>
+        <button
+          type="submit"
+          class="btn btn-primary form-control mt-20"
+          id="sigupButton"
+        >Submit</button>
+        <p class="m-0 font-size-12">Do you already have an account?<a
+            href="/app/signin"
+            class="text-primary"
+          >Sign In</a></p>
+      </div>
+    </form>
+   
+    <a href="https://supertokens.com">
+      <div
+        class="bg-transparent border-0 card m-0 p-0 w-200 h-25 d-flex justify-content-center align-items-center position-absolute bottom-0 right-0 font-text-bold"
+      >
+        <span class="text-success d-inline">
+          Powered-by
+        </span>
+        <img
+          class="img-fluid w-half h-three-quarter"
+          src="/app/supertokensLogo.png"
+          alt=""
+        />
+      </div>
+    </a>
+  </div>
+
+</div>
+<script src="scripts/signup.js"></script>

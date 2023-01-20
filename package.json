@@ -1,0 +1,44 @@
+{
+    "name": "auth_supertokens_customui",
+    "version": "1.0.0",
+    "description": "Implentationof supertokens with custom ui",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Carder07/auth_supertokens_customUI.git"
+    },
+    "keywords": [
+        "auth",
+        "supertokens"
+    ],
+    "author": "kekeli",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Carder07/auth_supertokens_customUI/issues"
+    },
+    "homepage": "https://github.com/Carder07/auth_supertokens_customUI#readme",
+    "dependencies": {
+        "bcrypt": "^5.1.0",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "express-handlebars": "^6.0.6",
+        "handlebars": "^4.7.7",
+        "helmet": "^6.0.0",
+        "nedb": "^1.8.0",
+        "nodemon": "^2.0.20",
+        "supertokens-node": "^12.1.5"
+    },
+    "devDependencies": {
+        "eslint": "^8.26.0",
+        "prettier": "2.7.1"
+    },
+    "engines": {
+        "node": "16.16.0"
+    }
+}

@@ -1,0 +1,112 @@
+<div
+  class="conntainer border rounded-10 bg-dark-light h-full d-flex justify-content-center align-items-center"
+>
+  <div
+    class="card signin-card  w-400 shadow w-three-quarter-md"
+    id="signinCard"
+  >
+    <div
+      class="d-none alert-error w-full align-items-center"
+      id="alert-bar-signin"
+      role="alert"
+    >
+      <span class="material-symbols-outlined mr-5">warning</span>
+      <span class="error-alert"> Please check credentials </span>
+    </div>
+    <div class="card-title text-center" id="signin-header">SignIn</div>
+    <form class=" p-20 w-full" id="signin-form">
+      <div class="form-group">
+        <label
+          for="first-name"
+          class="required font-weight-semi-bold"
+        >Email</label>
+        <input
+          type="text"
+          class="form-control shadow h-50"
+          id="Email"
+          placeholder="Email Address"
+          required="required"
+        />
+        <label
+          for="confirm-password"
+          class="required font-weight-semi-bold"
+        >Password</label>
+        <input
+          type="password"
+          class="form-control shadow h-50"
+          id="password"
+          placeholder="password"
+          required="required"
+        />
+        {{! <p class="text-center d-none text-danger" id="login-error">Please check credentials</p> }}
+        <button
+          type="submit"
+          id="signinButton"
+          class="btn btn-primary form-control mt-20"
+        >Login</button>
+        <p class="m-0 font-size-12">Don't have an account ?<a
+            href="/app/signup"
+            class="text-primary"
+          >Sign Up</a></p>
+
+        <button
+          type="button"
+          class="btn text-success font-size-12 mt-20 text-center border-0"
+          id="forgotten-password"
+        >Forgotten Password ?</button>
+      </div>
+    </form>
+
+    {{! forgotten password form }}
+    <div
+      class="card-title text-center text-primary d-none"
+      id="forgottenpassowrd-header"
+    >Forgotten Password</div>
+    <form class="w-full p-20 d-none " id="forgotten-form">
+      <label for="forgotten-email" class="required font-weight-semi-bold">Email
+        address</label>
+      <input
+        type="text"
+        class="form-control shadow h-50"
+        id="forgottenEmail"
+        placeholder="password"
+        required="required"
+      />
+      <p
+        class="text-center d-none text-danger m-0"
+        id="forgotten-email-error"
+      >Hmmm 🤔 this email is not with us</p>
+      <button
+        type="submit"
+        id="forgottenButton"
+        class="btn btn-primary form-control mt-20"
+      >Submit</button>
+      <p class="m-0 font-size-12">Don't have an account ?<a
+          href="/app/signup"
+          class="text-primary"
+        >Sign Up</a></p>
+      <p
+        class="text-center d-none text-success"
+        id="forgotten-email-success"
+      >Check your email to reset password</p>
+
+
+    </form>
+  
+    <a href="https://supertokens.com">
+      <div
+        class="bg-transparent border-0 card m-0 p-0 w-200 h-25 d-flex justify-content-center align-items-center position-absolute bottom-0 right-0 font-text-bold"
+      >
+        <span class="text-success d-inline">
+          Powered-by
+        </span>
+        <img
+          class="img-fluid w-half h-three-quarter"
+          src="/app/supertokensLogo.png"
+          alt=""
+        />
+      </div>
+    </a>
+  </div>
+</div>
+<script src="scripts/signin.js"></script>

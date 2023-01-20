@@ -1,0 +1,178 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.signup-card,
+.home-card,
+.signin-card {
+    border-radius: 10px;
+    /* min-width: 40rem; */
+}
+
+.signup-card input {
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.signin-card input:focus {
+    background-color: rgb(183, 185, 180);
+    border: none;
+}
+
+#signup-form {
+    margin-top: 0px;
+    animation: signin-form 2s ease-in-out;
+}
+
+#signin-form,
+#resetpassword-form {
+    /* background-color: #fc4646; */
+    margin-top: 0px;
+    animation: signin-form 2s ease-in-out;
+}
+
+.alert-error {
+    border-radius: 10px;
+    position: relative;
+    padding: 1rem 2rem;
+    color: rgba(255, 255, 255, 0.85);
+    background-color: #fc4646;
+    background-image: none;
+    margin-top: 0;
+    border: 1px solid rgb(253, 65, 65);
+    animation: alert 0.6s ease-in-out;
+    /* z-index: 4; */
+}
+
+.connection {
+    list-style: none;
+}
+
+#forgottenpassowrd-header,
+#resetpassword-header {
+    margin-top: 12px;
+    animation: forgottenheader 1.7s ease-in-out 0.06s;
+}
+
+#forgotten-form {
+    animation: forgottenform 2.3s ease-in-out 0.1s;
+    margin-top: 60px;
+    /* background-color: #fc4646; */
+}
+
+#forgotten-email-error,
+#resetpassword-error {
+    opacity: 1;
+    animation: forgottenemailerror 1.3s ease-in;
+}
+
+#forgotten-email-success {
+    animation: forgottenemailerror 1.3s ease-in;
+}
+
+@keyframes forgottenemailerror {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 0.7;
+    }
+}
+
+@keyframes signin-form {
+    from {
+        margin-top: -20px;
+        opacity: 0.2;
+    }
+    50% {
+        margin-top: 20px;
+    }
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes forgottenform {
+    from {
+        margin-top: 0px;
+        opacity: 0.2;
+    }
+    50% {
+        margin-top: 80px;
+        opacity: 0.7;
+    }
+    to {
+        margin-top: 60px;
+        opacity: 1;
+    }
+}
+
+@keyframes forgottenheader {
+    from {
+        margin-top: -50px;
+        opacity: 0.4;
+    }
+    to {
+        margin-top: 12px;
+        opacity: 1;
+    }
+}
+
+@keyframes alert {
+    from {
+        margin-top: -50px;
+        opacity: 0.4;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+.alert-error-signin {
+    border-radius: 10px;
+    position: relative;
+    padding: 1rem 2rem;
+    color: rgba(255, 255, 255, 0.85);
+    background-color: #fc4646;
+    background-image: none;
+    margin-top: 0;
+    border: 1px solid rgb(253, 65, 65);
+    animation: alertin 0.5s ease-in 0s;
+    /* z-index: 4; */
+}
+
+@keyframes alertin {
+    from {
+        margin-top: -50px;
+        opacity: 0.4;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+.alert-error-signin-out {
+    border-radius: 10px;
+    position: relative;
+    padding: 1rem 2rem;
+    color: rgba(255, 255, 255, 0.85);
+    background-color: #fc4646;
+    background-image: none;
+    border: 1px solid rgb(253, 65, 65);
+    animation: signin-out 1s ease-out 0s;
+    /* z-index: 4; */
+}
+
+@keyframes signin-out {
+    from {
+        margin-top: 0px;
+        opacity: 0.4;
+    }
+    to {
+        margin-top: -50px;
+        opacity: 0;
+    }
+}
