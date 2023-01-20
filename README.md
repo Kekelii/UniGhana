@@ -1,19 +1,14 @@
-# Auth_supertokens_customUI
+# Uni Ghana
 
-## Implentationof supertokens with custom ui
+## Implentation of login  
 
 ### Take note of the following before running code locally
-    Have a super tokens accout to get access to supertokens url and apikey
-
-    Have a mongodb Atlas cluster to save data to your database if you wish to save to a database
-
-    Or configure a database to store your data 
-
-    All env_variables can be found in env_variables.js
-
+    npm install
+    
+ `npm start` to start the application
 
 ## To run code 
- `npm start` to start the application
+
 
 
 ## Give me a star 
