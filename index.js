@@ -35,6 +35,7 @@ app.set("views", "./views");
 app.use("/app", Express.static("public"));
 app.use(
     cors({
+        origin: "http://172.104.244.82:3000",
         allowedHeaders: ["content-type", ...supertokens.getAllCORSHeaders()],
         credentials: true,
     })

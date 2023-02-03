@@ -54,8 +54,8 @@ supertokens.init({
                                 return originalImplementation.sendEmail({
                                     ...input,
                                     passwordResetLink: input.passwordResetLink.replace(
-                                        "http://localhost:3000/auth/reset-password",
-                                        "http://localhost:3000/app/reset-password"
+                                        "http://172.104.244.82:3000/auth/reset-password",
+                                        "http://172.104.244.82:3000/reset-password"
                                     ),
                                 });
                             }
