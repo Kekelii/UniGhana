@@ -17,8 +17,8 @@ supertokens.init({
     appInfo: {
         // learn more about this on https://supertokens.com/docs/session/appinfo
         appName: "UniGhana_portfolio",
-        apiDomain: "http://localhost:3000/",
-        websiteDomain: "http://localhost:3000/app",
+        apiDomain: "172.104.244.82:3000/",
+        websiteDomain: "http://172.104.244.82:3000/app",
         apiBasePath: "/supertokens",
         websiteBasePath: "/auth",
     },
