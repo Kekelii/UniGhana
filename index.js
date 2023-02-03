@@ -12,7 +12,7 @@ import {
 import { verifySession } from "supertokens-node/recipe/session/framework/express/index.js";
 import "./supertokens_init.js";
 import db from './database/db.js'
-
+// import variables from "./env_variables.js";
 
 
 
@@ -35,7 +35,7 @@ app.set("views", "./views");
 app.use("/app", Express.static("public"));
 app.use(
     cors({
-        origin: "http://172.104.244.82:3000",
+        origin: `${variables.ip}`,
         allowedHeaders: ["content-type", ...supertokens.getAllCORSHeaders()],
         credentials: true,
     })

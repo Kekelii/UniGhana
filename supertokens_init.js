@@ -17,8 +17,8 @@ supertokens.init({
     appInfo: {
         // learn more about this on https://supertokens.com/docs/session/appinfo
         appName: "UniGhana_portfolio",
-        apiDomain: "172.104.244.82:3000/",
-        websiteDomain: "http://172.104.244.82:3000/app",
+        apiDomain: `${variables.ip}`,
+        websiteDomain: `${variables.ip}/app`,
         apiBasePath: "/supertokens",
         websiteBasePath: "/auth",
     },
@@ -54,8 +54,8 @@ supertokens.init({
                                 return originalImplementation.sendEmail({
                                     ...input,
                                     passwordResetLink: input.passwordResetLink.replace(
-                                        "http://172.104.244.82:3000/auth/reset-password",
-                                        "http://172.104.244.82:3000/reset-password"
+                                        `${variables.ip}/auth/reset-password`,
+                                        `${variables.ip}/reset-password`
                                     ),
                                 });
                             }

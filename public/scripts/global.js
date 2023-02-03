@@ -1,10 +1,10 @@
 /* eslint-disable no-undef */
 /* Initialising the supertokens library. */
-
+import variables from "../../env_variables";
 // developmemt config
 supertokens.init({
     appInfo: {
-        apiDomain: "http://localhost:3000",
+        apiDomain: `${variables.ip}`,
         apiBasePath: "/supertokens",
         appName: "Courage's Server",
     },
