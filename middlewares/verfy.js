@@ -3,7 +3,7 @@ import Session from "supertokens-node/recipe/session/index.js";
 
 
 export default async(req, res, next) => {
-    //both scenarios check and redirect clint
+    //both scenarios check and redirect the client
     try {
 
         let session = await Session.getSession(req, res);
